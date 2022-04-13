@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
         
     - name: Install Packages
-      run: npm ci
+      run: npm install
     
     - name: Deploy to GH Pages 🚀
       run: |
