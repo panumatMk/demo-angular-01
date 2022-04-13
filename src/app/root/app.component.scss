@@ -1,1 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
+@import "src/assets/styles/colors";
+
+.main-container {
+  height: 100%;
+  display: flex;
+}
+
+.menu-container{
+  background-color: $color-2;
+  width: 300px;
+}
+
+.content-container {
+  border: 1px solid $color-1;
+}
+
