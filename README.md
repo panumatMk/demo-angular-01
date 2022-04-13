@@ -5,6 +5,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Deploy with github page
 https://www.npmjs.com/package/angular-cli-ghpages
 
+## Command create component
+`ng generate module customers --route customers --module ./../root/app.module`
+
+
 
 
 
