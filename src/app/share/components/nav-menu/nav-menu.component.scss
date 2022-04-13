@@ -1,0 +1,18 @@
+@import "src/assets/styles/colors";
+
+.menu-container {
+  background-color: $color-2;
+
+  .menu-item {
+    height: 60px;
+    border: 1px solid $color-1;
+    border-left: none;
+    line-height: 55px;
+    padding-left: 20px;
+    cursor: pointer;
+
+    &.active {
+      background-color: $color-1;
+    }
+  }
+}

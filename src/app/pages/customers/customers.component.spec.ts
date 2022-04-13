@@ -1,15 +1,13 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { CustomersComponent } from './customers.component';
+import {CustomersComponent} from './customers.component';
 
 describe('CustomersComponent', () => {
-  let component: CustomersComponent;
+    let component: CustomersComponent;
 
-  beforeEach(() => {
-    component = new CustomersComponent();
-  });
+    beforeEach(() => {
+        component = new CustomersComponent();
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });

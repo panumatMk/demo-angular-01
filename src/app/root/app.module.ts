@@ -5,17 +5,21 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NgbButtonsModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {ReactiveFormsModule} from "@angular/forms";
+import {ShareComponentModule} from "../share/components/share-component.module";
+import { MenuComponent } from './menu/menu/menu.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        MenuComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         NgbModule,
         ReactiveFormsModule,
-        NgbButtonsModule
+        NgbButtonsModule,
+        ShareComponentModule
     ],
     providers: [],
     bootstrap: [AppComponent]

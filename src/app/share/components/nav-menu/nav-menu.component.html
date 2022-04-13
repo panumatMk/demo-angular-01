@@ -1,0 +1,8 @@
+<div class="menu-container">
+    <ng-template ngFor let-menu let-index=index [ngForOf]="list">
+        <div (click)="setActiveMenu(index)"
+             [class]="'menu-item ' + (menu.isActive?'active':'') ">
+            {{menu.label}}
+        </div>
+    </ng-template>
+</div>
