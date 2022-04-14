@@ -16,28 +16,6 @@ export class NavMenuComponent implements OnInit {
     @Input() list: Menu[] = []
 
     constructor() {
-        this.list = [
-            {
-                label: 'Pagination',
-                link: '',
-                isActive: false
-            },
-            {
-                label: 'Toast',
-                link: '',
-                isActive: false
-            },
-            {
-                label: 'Dropdown',
-                link: '',
-                isActive: false
-            },
-            {
-                label: 'Table',
-                link: '',
-                isActive: false
-            }
-        ]
     }
 
     ngOnInit(): void {
