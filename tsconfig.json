@@ -23,6 +23,9 @@
       "es2018",
       "dom"
     ],
+    "paths": {
+      "@share/*": ["src/app/share/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

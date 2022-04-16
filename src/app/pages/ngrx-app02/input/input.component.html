@@ -1,0 +1,12 @@
+<div style="display: flex;gap: 10px">
+    <input [formControl]="nameForm">
+    <select [formControl]="genderForm" name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <button (click)="addToTable()">add to table</button>
+</div>
+<br/>
+<div>
+    <button (click)="resetTable()">reset table</button>
+</div>

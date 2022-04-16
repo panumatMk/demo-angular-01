@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 export interface Menu {
     label: string;
@@ -15,7 +16,9 @@ export class NavMenuComponent implements OnInit {
 
     @Input() list: Menu[] = []
 
-    constructor() {
+    constructor(
+        private router: Router
+    ) {
     }
 
     ngOnInit(): void {
@@ -25,6 +28,7 @@ export class NavMenuComponent implements OnInit {
     setActiveMenu(index: number): void {
         this.list.forEach((menu, i) => {
             menu.isActive = i === index;
-        })
+        });
+        this.router.navigate([this.list[index].link]);
     }
 }

@@ -1,0 +1,10 @@
+@import "src/assets/styles/colors";
+
+.table-01, th, td {
+  border: 1px solid $color-3;
+  padding: 10px;
+}
+
+th {
+  width: 200px;
+}

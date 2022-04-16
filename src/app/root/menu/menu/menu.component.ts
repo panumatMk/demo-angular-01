@@ -15,22 +15,22 @@ export class MenuComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.router.navigate(['priceCompare']);
+        // this.router.navigate(['priceCompare']);
 
         this.list = [
             {
                 label: 'Price Za',
                 link: '/priceCompare',
-                isActive: true
-            },
-            {
-                label: 'Toast',
-                link: '',
                 isActive: false
             },
             {
-                label: 'Dropdown',
-                link: '',
+                label: 'counter (ngrx)',
+                link: '/ngrx-app01',
+                isActive: false
+            },
+            {
+                label: 'Name list (ngrx)',
+                link: '/ngrx-app02',
                 isActive: false
             },
             {

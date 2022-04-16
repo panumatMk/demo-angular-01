@@ -1,0 +1,12 @@
+<table class="table-01">
+    <tr>
+        <th>Name</th>
+        <th>Gender</th>
+    </tr>
+    <ng-container *ngFor="let item of (nameList | async)">
+        <tr>
+            <td>{{item.name}}</td>
+            <td>{{item.gender}}</td>
+        </tr>
+    </ng-container>
+</table>
