@@ -16,7 +16,6 @@ import {HelloComponent} from "./hello/hello.component";
         PriceCompareRoutingModule,
         FormsModule,
         ReactiveFormsModule
-    ],
-    entryComponents: [HelloComponent]
+    ]
 })
 export class PriceCompareModule { }
