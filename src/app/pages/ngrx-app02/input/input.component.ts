@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormControl} from "@angular/forms";
 import {NameList} from "@share/interface/nameList";
 import {Store} from "@ngrx/store";
-import {NameListAction} from "@share/actions/nameList.action";
+import {NameListAction} from "@share/store/actions/nameList.action";
 
 @Component({
     selector: 'app-input',

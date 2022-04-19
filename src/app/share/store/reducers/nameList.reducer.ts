@@ -1,5 +1,5 @@
 import {createReducer, on} from "@ngrx/store";
-import {NameListAction} from "@share/actions/nameList.action";
+import {NameListAction} from "@share/store/actions/nameList.action";
 import {NameList} from "@share/interface/nameList";
 
 export namespace NameListReducer {

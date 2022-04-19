@@ -1,1 +1,20 @@
-<p>price-compare works!!!!!</p>
+<button (click)="createHello()">create</button>
+
+<div [formGroup]="formGroup" style="border: 1px solid white; padding: 5px">
+    name: <input formControlName="name">
+    <br/>
+    weight: <input formControlName="weight" type="number">/g
+    <br/>
+    price: <input formControlName="price" type="number">/100g
+    <br/>
+    total price {{formGroup.get('totalPrice')?.value}} $
+    <br/>
+    <button (click)="addItem()">Add item</button>
+</div>
+
+<div *ngFor="let item of (list | async)" style="border: 1px solid white; padding: 5px">
+    <div>name: {{item.name}}</div>
+    <div>weight: {{item.weight}} g</div>
+    <div>price: {{item.price}} / 100g </div>
+    <div>total price: {{item.totalPrice}} $</div>
+</div>
