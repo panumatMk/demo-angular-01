@@ -17,6 +17,10 @@ const routes: Routes = [
     {
         path: 'ngrx-app02',
         loadChildren: () => import('../pages/ngrx-app02/ngrx-app02.module').then(m => m.NgrxApp02Module)
+    },
+    {
+        path: 'memolizeFunction',
+        loadChildren: () => import('../pages/memolize-function/memolize-function.module').then(m => m.MemolizeFunctionModule)
     }
 ];
 

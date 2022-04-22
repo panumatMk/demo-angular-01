@@ -15,13 +15,13 @@ export class MenuComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        // this.router.navigate(['priceCompare']);
+        this.router.navigate(['priceCompare']);
 
         this.list = [
             {
                 label: 'Price Za',
                 link: '/priceCompare',
-                isActive: false
+                isActive: true
             },
             {
                 label: 'counter (ngrx)',
@@ -34,8 +34,8 @@ export class MenuComponent implements OnInit {
                 isActive: false
             },
             {
-                label: 'Table',
-                link: '',
+                label: 'Memolize Pipe',
+                link: '/memolizeFunction',
                 isActive: false
             }
         ]
