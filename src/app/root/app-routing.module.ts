@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {HttpClientModule} from "@angular/common/http";
 
 const routes: Routes = [
     {
@@ -21,12 +22,18 @@ const routes: Routes = [
     {
         path: 'memolizeFunction',
         loadChildren: () => import('../pages/memolize-function/memolize-function.module').then(m => m.MemolizeFunctionModule)
-    }
+    },
+    {path: 'image', loadChildren: () => import('../pages/image/image.module').then(m => m.ImageModule)}
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+    imports: [
+        RouterModule.forRoot(routes),
+        HttpClientModule
+    ],
+    exports: [RouterModule],
+    providers: [
+    ]
 })
 export class AppRoutingModule {
 }

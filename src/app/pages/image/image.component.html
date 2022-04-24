@@ -1,0 +1,9 @@
+<button (click)="getImage()">Load Image</button>
+<div style="display: flex;flex-wrap: wrap;">
+    <div *ngFor="let imageBlob of imagesBlob">
+        <img appDefaultImage
+             [src]="imageBlob"
+             alt="Your image"
+             style="display: block"/>
+    </div>
+</div>

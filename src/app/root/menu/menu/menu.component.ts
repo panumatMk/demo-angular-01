@@ -11,17 +11,15 @@ export class MenuComponent implements OnInit {
 
     list: Menu[] = [];
 
-    constructor(private router: Router) {
+    constructor() {
     }
 
     ngOnInit(): void {
-        this.router.navigate(['priceCompare']);
-
         this.list = [
             {
                 label: 'Price Za',
                 link: '/priceCompare',
-                isActive: true
+                isActive: false
             },
             {
                 label: 'counter (ngrx)',
@@ -36,6 +34,10 @@ export class MenuComponent implements OnInit {
             {
                 label: 'Memolize Pipe',
                 link: '/memolizeFunction',
+                isActive: false
+            }, {
+                label: 'Image Directive',
+                link: '/image',
                 isActive: false
             }
         ]
